@@ -1,4 +1,4 @@
-let qtdNumeros_s = prompt("Bem-vindo! Digite a quantidade de numeros que você deseja para calcular a média:");
+let qtdNumeros_s = prompt("Bem-vindo! Digite a quantidade de numeros para calcular a média:");
 let qtdNumeros_i = parseInt(qtdNumeros_s);
 
 let soma = 0;
