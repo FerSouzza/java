@@ -1,15 +1,14 @@
-let qtdNumeros_s =  prompt ("Seja bem vindo!, digite a quantidade de numeros que você deseja fazer a média : ");
+let qtdNumeros_s = prompt("Seja bem-vindo! Digite a quantidade de números que você deseja para calcular a média:");
 let qtdNumeros_i = parseInt(qtdNumeros_s);
 
 let soma = 0;
 
-for (let count = 0; count < qtdNumeros_i ; count++){
-    let numeros_s = prompt("Digite aqui o numero :");
-    let x1 = parseInt(numeros_s);
-    soma += x1;
+for (let count = 1; count <= qtdNumeros_i; count++) {
+    let numero_s = prompt(`Digite o ${count}º número:`);
+    let numero = parseFloat(numero_s); // aceita números com vírgula
+    soma += numero;
 }
 
 let media = soma / qtdNumeros_i;
 
-console.log("A média é : "+media);
-
+document.getElementById("resultado").textContent = `A média é: ${media.toFixed(2)}`;
